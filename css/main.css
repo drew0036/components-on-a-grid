@@ -10,9 +10,45 @@ html {
 
 img {
   width: 100%;
+  display: flex;
+}
+
+body {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, 15rem);
+  grid-template-areas:
+    "header header"
+    "main";
+  gap: 1rem;
 }
 
 header {
-  /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
-  display: contents;
+  background-color: pink;
+  grid-area: header;
+  display: block;
+  margin: 1rem 1rem 0;
+}
+
+.logo {
+  display: inline-block;
+  grid-column: 1 / -1;
+  grid-row: 2;
+  z-index: 1;
+  width: 14rem;
+}
+
+/* .logo {
+
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+} */
+
+main {
+  grid-area: main;
+  display: inline-flex;
+}
+
+figure {
+    background-color: green;
+    margin: 1rem;
 }
