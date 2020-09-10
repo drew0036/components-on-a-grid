@@ -21,9 +21,9 @@ nav ul {
   list-style: none;
   text-decoration: none;
   display: flex;
-  justify-content: space-around;
-
   padding: 0;
+  justify-content: space-around;
+  max-width: 26rem;
 }
 
 nav {
@@ -54,6 +54,7 @@ img {
   grid-column: 1;
   grid-row: 2;
   align-self: end;
+  padding: 1rem;
 }
 
 .pano {
@@ -75,7 +76,7 @@ body {
 
 header {
   grid-area: header;
-  display: inline-grid;
+  display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
