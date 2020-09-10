@@ -23,7 +23,7 @@ nav ul {
   display: flex;
   padding: 0;
   justify-content: space-around;
-  max-width: 26rem;
+  max-width: 28rem;
 }
 
 nav {
@@ -54,7 +54,7 @@ img {
   grid-column: 1;
   grid-row: 2;
   align-self: end;
-  padding: 1rem;
+  margin: 1rem 1rem 2rem;
 }
 
 .pano {
@@ -75,8 +75,8 @@ body {
 }
 
 header {
-  grid-area: header;
   display: grid;
+  grid-area: header;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
@@ -84,9 +84,12 @@ header {
 main {
   grid-area: main;
   display: flex;
-  gap: 1rem;
 }
 
 figure {
   margin: 0;
+}
+
+figure:nth-child(1) {
+  margin: 0 1rem 0 0;
 }
